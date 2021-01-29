@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Register">
+
+    <ProgressBar
+        android:layout_width="93dp"
+        android:layout_height="95dp"
+
+        android:layout_centerInParent="true"
+        android:scrollbarSize="145px"
+        android:maxWidth="8dp"
+        android:visibility="gone"
+
+        android:id="@+id/Register_progress"/>
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="120px"
+        android:id="@+id/Register"/>
+
+    <TextView
+        android:id="@+id/MDC_headline"
+        android:layout_width="wrap_content"
+        android:layout_height="99dp"
+        android:layout_below="@id/Register"
+
+        android:layout_centerHorizontal="true"
+        android:fontFamily="sans-serif-black"
+        android:padding="0dp"
+        android:text="MDC"
+        android:textSize="220px"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/MDC_headline"
+
+        android:text="Create Your Account"
+        android:fontFamily="sans-serif-black"
+        android:layout_centerHorizontal="true"
+        android:paddingBottom="120px"
+
+        android:id="@+id/MDC_subtitle"/>
+
+    <EditText
+        android:layout_width="240dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/MDC_subtitle"
+        android:paddingBottom="30px"
+
+        android:layout_centerHorizontal="true"
+        android:hint="Enter Name"
+
+        android:id="@+id/Register_Name"/>
+
+    <EditText
+        android:layout_width="240dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/Register_Name"
+        android:layout_centerHorizontal="true"
+        android:paddingBottom="30px"
+
+        android:hint="Enter Email"
+
+        android:id="@+id/Register_Email"/>
+
+    <EditText
+        android:layout_width="240dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/Register_Email"
+        android:layout_centerHorizontal="true"
+        android:paddingBottom="30px"
+
+        android:hint="Enter Password"
+
+        android:id="@+id/Register_Password"/>
+
+    <EditText
+        android:layout_width="240dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/Register_Password"
+        android:layout_centerHorizontal="true"
+        android:paddingBottom="30px"
+
+        android:hint="Confirm Password"
+
+        android:id="@+id/Register_Conpass"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/Register_Conpass"
+        android:layout_centerHorizontal="true"
+        android:paddingTop="40px"
+
+        android:text="Register"
+
+        android:id="@+id/Register_Button"/>
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="138dp"
+        android:layout_alignParentBottom="true"/>
+
+</RelativeLayout>

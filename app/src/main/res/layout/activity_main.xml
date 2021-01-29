@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="120px"
+        android:id="@+id/welcome"/>
+
+    <ProgressBar
+        android:layout_width="93dp"
+        android:layout_height="95dp"
+
+        android:layout_centerInParent="true"
+        android:scrollbarSize="145px"
+        android:maxWidth="8dp"
+        android:visibility="gone"
+
+        android:id="@+id/welcome_progress"/>
+
+    <TextView
+        android:id="@+id/MDC_Welcome_headline"
+        android:layout_width="wrap_content"
+        android:layout_height="94dp"
+        android:layout_below="@id/welcome"
+
+        android:layout_centerHorizontal="true"
+        android:fontFamily="sans-serif-black"
+        android:padding="0dp"
+        android:text="MDC"
+
+        android:textSize="220px"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/MDC_Welcome_headline"
+
+        android:text="Material Design Component"
+        android:fontFamily="sans-serif-black"
+        android:layout_centerHorizontal="true"
+        android:paddingBottom="120px"
+
+
+        android:id="@+id/MDC_subtitle"/>
+
+    <EditText
+        android:layout_width="220dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/MDC_subtitle"
+        android:layout_centerHorizontal="true"
+
+        android:hint="Enter E-mail"
+        android:padding="20px"
+
+        android:id="@+id/Main_Email"/>
+
+    <EditText
+        android:layout_width="220dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/Main_Email"
+        android:layout_centerHorizontal="true"
+
+        android:hint="Enter Password"
+
+        android:id="@+id/Main_Password"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/Main_Password"
+        android:layout_centerHorizontal="true"
+
+        android:text="Login"
+        android:paddingHorizontal="40px"
+        android:paddingVertical="23px"
+        android:paddingTop="130px"
+        android:textStyle="bold"
+        android:outlineProvider="none"
+        android:elevation="4dp"
+
+        android:id="@+id/Main_btn_Login"/>
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="8dp"
+        android:id="@+id/Button_Space"
+        android:layout_below="@id/Main_btn_Login"/>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/Button_Space"
+        android:layout_centerHorizontal="true">
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="Forgot Password"
+            android:id="@+id/Main_Forgot"/>
+
+        <Space
+            android:layout_width="80px"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/Main_Forgot"
+            android:id="@+id/space"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="Register"
+            android:layout_toRightOf="@id/space"
+
+            android:id="@+id/Main_Register"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"/>
+
+</RelativeLayout>
